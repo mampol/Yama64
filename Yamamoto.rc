@@ -1,0 +1,748 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "bmp01.bmp"
+
+IDB_BITMAP11            BITMAP                  "bmp11.bmp"
+
+IDB_BITMAP1D            BITMAP                  "bmp01d.bmp"
+
+IDB_BITMAP2             BITMAP                  "bmp02.bmp"
+
+IDB_BITMAP3             BITMAP                  "bmp03.bmp"
+
+IDB_BITMAP4             BITMAP                  "bmp04.bmp"
+
+IDB_BITMAP5             BITMAP                  "bmp05.bmp"
+
+IDB_BITMAP6             BITMAP                  "bmp06.bmp"
+
+IDB_BITMAP7             BITMAP                  "bmp07.bmp"
+
+IDB_BITMAP7D            BITMAP                  "bmp07d.bmp"
+
+IDB_BITMAP8             BITMAP                  "bmp08.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_EDIT MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "ソース一覧に追加(&A)",                IDM_EDITADDSRC
+        MENUITEM SEPARATOR
+        MENUITEM "ファイルを開く(&O)",                 IDM_EDITOPEN
+        MENUITEM "名前を付けて保存(&S)",                IDM_EDITSAVE
+        MENUITEM SEPARATOR
+        MENUITEM "閉じる(&C)",                     IDM_EDITCLOSE
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl + Z",          IDM_EDITUNDO
+        MENUITEM "やり直し(&R)\tCtrl + Y",          IDM_EDITREDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り(&T)\tCtrl + X",          IDM_EDITCUT
+        MENUITEM "ｺﾋﾟｰ(&C)\tCtrl + C",          IDM_EDITCOPY
+        MENUITEM "貼り付け(&P)\tCtrl + P",          IDM_EDITPASTE
+        MENUITEM "削除(&D)\tDel",                 IDM_EDITDEL
+        MENUITEM SEPARATOR
+        MENUITEM "全て選択(&A)\tCtrl + A",          IDM_EDITALLSEL
+    END
+END
+
+IDR_MENU_LVPOPUP MENU
+BEGIN
+    POPUP "Tree Expand Popup"
+    BEGIN
+        MENUITEM "展開 (&E)",                     IDM_EXPAND
+        MENUITEM "全て展開 (&A)",                   IDM_ALLEXPAND
+        MENUITEM SEPARATOR
+        MENUITEM "プロパティ(&P)",                   IDM_ITEMPROPERTY
+        MENUITEM SEPARATOR
+        MENUITEM "コピー (&C)\tCtrl + C",          IDM_COPY
+        MENUITEM "貼り付け(&P)\tCtrl + V",          IDM_PASTE
+    END
+    POPUP "Tree Collapse Popup"
+    BEGIN
+        MENUITEM "閉じる (&C)",                    IDM_COLLAPSE
+        MENUITEM "全て展開 (&A)",                   IDM_ALLEXPAND
+        MENUITEM SEPARATOR
+        MENUITEM "プロパティ(&P)",                   IDM_ITEMPROPERTY
+        MENUITEM SEPARATOR
+        MENUITEM "コピー (&C)\tCtrl + C",          IDM_COPY
+        MENUITEM "貼り付け(&P)\tCtrl + V",          IDM_PASTE
+    END
+    POPUP "Normal Tree Item"
+    BEGIN
+        MENUITEM "プロパティ(&P)",                   IDM_ITEMPROPERTY
+        MENUITEM SEPARATOR
+        MENUITEM "コピー (&C)\tCtrl + C",          IDM_COPY
+        MENUITEM "貼り付け(&P)\tCtrl + V",          IDM_PASTE
+    END
+    POPUP "Dummy"
+    BEGIN
+        MENUITEM "AutoExpand",                  IDM_AUTOEXPAND
+    END
+END
+
+IDR_MENU_MAIN MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規解析(&N)\tCrrl + N",          IDM_NEW
+        MENUITEM "新規ウィンドウ(&W)\tCrrl + Shift + N", IDM_NEW_APP
+        MENUITEM SEPARATOR
+        MENUITEM "ソースファイルを開く(&O)\tCtrl + O",    IDM_OPENSRC
+        MENUITEM "データファイルを開く(&D)",              IDM_OPENDAT
+        POPUP "解析結果をファイルに出力 (&T)"
+        BEGIN
+            MENUITEM "CSV形式で出力 (&C)",               IDM_SAVE_CSV
+            MENUITEM "COBOLソース出力 (&O)",             IDM_SAVE_CBL
+        END
+        MENUITEM SEPARATOR
+        POPUP "最近解析したソースファイル(&H)"
+        BEGIN
+            MENUITEM "履歴はありません",                    IDM_HISTORY, GRAYED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)\tAlt + F4",   IDM_END
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "コピー (&C)\tCtrl + C",          IDM_COPY
+        MENUITEM "貼り付け(&P)\tCtrl + V",          IDM_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "解析結果検索(&F)\tCtrl + F",        IDM_FIND
+        MENUITEM SEPARATOR
+        MENUITEM "ソースコード編集(&E)\tCtrl + E",      IDM_EDITDLG
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "アウトプット (&O)",                 IDM_OUTPUT_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "出力 (&T)\tCtrl + 1",           IDM_TRACE_VIEW
+        MENUITEM "ソース一覧 (&L)\tCtrl + 2",        IDM_SOURCE_VIEW
+        MENUITEM "検索結果 (&S)\tCtrl + 3",         IDM_SEARCH_VIEW
+        MENUITEM "データファイル (&D)\tCtrl + 4",      IDM_DATA_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "設定(&S)\tF12",                 IDM_SETUP
+    END
+    POPUP "解析(&A)"
+    BEGIN
+        MENUITEM "解析開始(&A)\tCtrl+A",            IDM_ANACBL
+        MENUITEM SEPARATOR
+        MENUITEM "解析設定の表示(&V)",                 IDM_VIEWANACBL
+        MENUITEM SEPARATOR
+        POPUP "解析対象ソース一覧(&S)"
+        BEGIN
+            MENUITEM "最新の状態に更新 (&R)\tF5",           IDM_REFLESHSRC
+            MENUITEM SEPARATOR
+            MENUITEM "全て削除(&A)",                    IDM_CLOSEALLSRC
+        END
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "バージョン情報(&A)",                 IDM_VERSIONINFO
+    END
+END
+
+IDR_MENU_OUTPOPUP MENU
+BEGIN
+    POPUP "Source List Popup"
+    BEGIN
+        MENUITEM "開く(&O)\tEnter",               IDM_SHOPENSRC
+        MENUITEM SEPARATOR
+        MENUITEM "上に移動(&U)\tAlt + Up",          IDM_SRC_UP
+        MENUITEM "下に移動(&D)\tAlt + Down",        IDM_SRC_DOWN
+        MENUITEM SEPARATOR
+        MENUITEM "削除(&R)\tDelete",              IDM_CLOSESRC
+        MENUITEM "全て削除(&A)",                    IDM_CLOSEALLSRC
+        MENUITEM SEPARATOR
+        MENUITEM "最新の状態に更新 (&R)",               IDM_REFLESHSRC
+    END
+    POPUP "Source List Popup NoSel"
+    BEGIN
+        MENUITEM "全て削除(&A)",                    IDM_CLOSEALLSRC
+        MENUITEM SEPARATOR
+        MENUITEM "最新の状態に更新(&R)",                IDM_REFLESHSRC
+    END
+    POPUP "Search List Popup"
+    BEGIN
+        MENUITEM "表示(&S)\tEnter",               IDM_SEARCH_SEL
+        MENUITEM SEPARATOR
+        MENUITEM "検索結果消去(&C)",                  IDM_SEARCH_CLEAR
+    END
+    POPUP "Data Popup"
+    BEGIN
+        MENUITEM "次のレコード\tAlt+→",               IDM_NEXTDAT
+        MENUITEM "前のレコード\tAlt+←",               IDM_PREVDAT
+    END
+END
+
+IDR_MENU_SUB MENU
+BEGIN
+    POPUP "IDM_OPENSRC"
+    BEGIN
+        MENUITEM "ソースファイルを開く(&O)",              IDM_OPENSRC
+        MENUITEM "クリップボードﾞから開く(&P)",            IDM_PASTE
+        MENUITEM "ソースコード編集(&E)",                IDM_EDITDLG
+    END
+    POPUP "IDM_ANACBL"
+    BEGIN
+        MENUITEM "解析開始(&A)",                    IDM_ANACBL
+        MENUITEM SEPARATOR
+        MENUITEM "解析設定の表示(&V)",                 IDM_VIEWANACBL
+    END
+    POPUP "IDM_HISTORY"
+    BEGIN
+        MENUITEM "Dlete History",               IDM_DELETEHISTORY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFBOX DIALOGEX 0, 0, 255, 226
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "解析設定の確認"
+FONT 9, "Meiryo UI", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,205,53,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,195,205,53,14
+    CONTROL         "List2",IDC_LIST_SETTING,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOCOLUMNHEADER | WS_TABSTOP,17,21,220,77,WS_EX_CLIENTEDGE
+    CONTROL         "List2",IDC_LIST_SRCLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOCOLUMNHEADER | WS_TABSTOP,17,133,220,57,WS_EX_CLIENTEDGE
+    GROUPBOX        "解析対象ソース一覧",IDC_STATIC,7,120,241,77
+    GROUPBOX        "解析の設定値",IDC_STATIC,7,7,241,101
+END
+
+IDD_EDITBOX DIALOGEX 0, 0, 555, 249
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "EditDlg"
+MENU IDR_MENU_EDIT
+FONT 9, "Meiryo UI", 0, 0, 0x0
+BEGIN
+END
+
+IDD_ITEM_PROPPAGE_1 DIALOGEX 0, 0, 250, 270
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "属性"
+FONT 9, "Meiryo UI", 400, 0, 0x0
+BEGIN
+    CONTROL         "List1",IDC_LIST_STATE,"SysListView32",LVS_REPORT | WS_TABSTOP,9,154,226,65,WS_EX_CLIENTEDGE
+    ICON            IDI_ICON01,IDC_STATIC,5,3,20,20,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ID,34,10,168,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_STATIC_LINE1,6,28,233,8,SS_SUNKEN
+    LTEXT           "ｿｰｽﾌｧｲﾙ:",IDC_STATIC,9,35,80,10
+    EDITTEXT        IDC_EDIT_SRCTITLE,94,35,145,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "場所:",IDC_STATIC,9,48,80,10
+    EDITTEXT        IDC_EDIT_SRCPATH,94,48,145,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ﾃﾞｨｽｸ上のｻｲｽﾞ:",IDC_STATIC,10,61,80,10
+    LTEXT           "Size",IDC_ST_SRCSIZE,94,61,145,12
+    LTEXT           "",IDC_STATIC_LINE2,6,75,233,8,SS_SUNKEN
+    LTEXT           "ﾚﾍﾞﾙ定義:",IDC_STATIC,9,82,80,10
+    LTEXT           "Level",IDC_ST_LEVEL,94,82,145,12
+    LTEXT           "変数の型定義:",IDC_STATIC,9,95,80,10
+    CONTROL         "Type",IDC_ST_TYPE,"Static",SS_LEFTNOWORDWRAP,94,95,145,12
+    LTEXT           "ﾒﾓﾘ上のｻｲｽﾞ:",IDC_STATIC,9,108,80,10
+    LTEXT           "Size",IDC_ST_SIZE,94,108,145,12
+    LTEXT           "ﾚｺｰﾄﾞ先頭からのｵﾌｾｯﾄ:",IDC_STATIC,9,121,80,10
+    LTEXT           "Pos",IDC_ST_POS,94,121,145,12
+    LTEXT           "",IDC_STATIC_LINE3,6,136,233,8,SS_SUNKEN
+    LTEXT           "詳細な属性:",IDC_STATIC,9,141,80,10
+END
+
+IDD_PAGE_ANALYSYS DIALOGEX 0, 0, 255, 210
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "ソース解析"
+FONT 9, "Meiryo UI", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_STATIC,9,2,240,60
+    LTEXT           "解析完了時初期展開レベル(&I):",IDC_STATIC,18,14,93,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_DEFLV,117,14,31,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "COBOLソース拡張子(&E):",IDC_STATIC,18,31,93,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_CBLEXT,117,31,118,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "（※セミコロン区切りで複数指定可能）",IDC_STATIC,117,44,117,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    CONTROL         "解析開始前に確認ダイアログの表示(&B)",IDC_CHECK_CONFDLG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,71,134,13
+    CONTROL         "コマンドラインでCOBOLソースファイルが指定されていたら即時解析(&C)",IDC_CHECK_CMDLINE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,86,206,13
+    CONTROL         "COBOLソースファイルがドロップされたら即時解析(&D)",IDC_CHECK_DROP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,102,155,13
+    CONTROL         "ソースコードが貼り付けられたら即時解析(&P)",IDC_CHECK_PASTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,134,148,13
+    CONTROL         "COBOLソースファイルがドロップされたら新規解析(&G)",IDC_CHECK_DROP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,118,157,13
+    CONTROL         "ソースコードが貼り付けられたら新規解析(&S)",IDC_CHECK_PASTE2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,150,148,13
+END
+
+IDD_PAGE_ANALYSYS_CORE DIALOGEX 0, 0, 255, 210
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "解析詳細"
+FONT 9, "Meiryo UI", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_STATIC,9,2,240,111
+    LTEXT           "行番号の桁数(&L):",IDC_STATIC,18,14,59,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SEQLEN,130,14,41,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ソースコードの有効桁数(&S):",IDC_STATIC,18,32,96,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_MAXSRCLINE,130,32,41,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "（※0で無制限）",IDC_STATIC,178,32,52,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    LTEXT           "SMEDファイル識別拡張子(&F):",IDC_STATIC,18,50,96,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SMEDEXT,130,50,41,12,ES_AUTOHSCROLL
+    LTEXT           "解析エラーとしない記号(&T):",IDC_STATIC,18,69,96,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_ERRTYPE1,130,69,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ERRTYPE2,149,69,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ERRTYPE3,168,69,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ERRTYPE4,187,69,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ERRTYPE5,207,69,15,12,ES_AUTOHSCROLL
+    CONTROL         "圧縮形式の変数サイズ算出はすべてPACKED-DECIMAL形式で行う(&M)",IDC_CHECK_HOSTCOMP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,120,228,13
+    CONTROL         "変数位置算出は１Byteから計算する(&P)",IDC_CHECK_COMPPOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,135,135,13
+    CONTROL         "文法チェック(β)を使用する(&S)",IDC_CHECK_CODECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,150,105,13
+END
+
+IDD_PAGE_EXPORT DIALOG 0, 0, 255, 210
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "解析結果出力"
+FONT 9, "Meiryo UI"
+BEGIN
+    GROUPBOX        "出力項目(&E)",IDC_STATIC,9,2,210,98
+    LISTBOX         IDC_LIST_HEADER,16,15,151,79,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "↑ 上(&U)",IDC_BTN_ITEMUP,173,15,39,15
+    PUSHBUTTON      "↓ 下(&D)",IDC_BTN_ITEMDOWN,173,35,39,15
+    PUSHBUTTON      "↑ 追加(&A)",IDC_BTN_ADD,18,107,42,15
+    PUSHBUTTON      "↓ 除外(&R)",IDC_BTN_DEL,68,107,42,15
+    GROUPBOX        "除外項目(&D)",IDC_STATIC,9,131,165,73
+    LISTBOX         IDC_LIST_DISHEADER,16,144,151,54,LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+END
+
+IDD_PAGE_FOLDER DIALOGEX 0, 0, 255, 210
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "フォルダ"
+FONT 9, "Meiryo UI", 400, 0, 0x0
+BEGIN
+    LTEXT           "初期表示フォルダ(&O):",IDC_STATIC,17,3,138,9,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_DEFOPENDIR,17,16,214,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_DEFOPENDIR,236,16,13,12
+    LTEXT           "COBOLソースファイルを開くアプリケーション(&C):",IDC_STATIC,17,34,138,9,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_COBOLOPEN,17,47,214,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_COBOLOPEN,236,47,13,12
+    LTEXT           "FORMソースファイルを開くアプリケーション(&S):",IDC_STATIC,17,65,138,9,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SMDOPEN,17,78,214,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_SMDOPEN,236,78,13,12
+    LTEXT           "作業用フォルダ(&T) (※再起動後有効):",IDC_STATIC_TMP,17,98,121,9,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_TMPDIR,17,110,214,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_TMPDIR,236,110,13,12
+    GROUPBOX        "履歴(&H)",IDC_STATIC,17,134,232,57
+    LTEXT           "解析を行ったファイルの履歴個数(&A)",IDC_STATIC,26,149,115,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_OPENHISCOUNT,142,149,36,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "個 (0～20)",IDC_STATIC,185,149,39,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "ファイルの履歴を消去 (&D)",IDC_BTN_OPENHISDEL,26,167,86,14
+END
+
+IDD_PAGE_OTHER DIALOGEX 0, 0, 255, 210
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "バージョン情報"
+FONT 9, "Meiryo UI", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Infomation",IDC_STATIC,9,11,242,185
+END
+
+IDD_PAGE_UI DIALOGEX 0, 0, 255, 210
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "ユーザーインターフェイス"
+FONT 9, "Meiryo UI", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "フォント(&F)",IDC_STATIC,9,2,240,56
+    LTEXT           "フェイス(&A):",IDC_STATIC,16,15,39,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_FONTFACE,68,15,94,106,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "サイズ(&S):",IDC_STATIC,170,15,31,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_FONTSIZE,204,15,35,106,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "文字の色(&R):",IDC_STATIC,16,35,42,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_FORECOLOR,68,34,55,106,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "背景の色(&K):",IDC_STATIC,132,35,42,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_BACKCOLOR,184,34,55,106,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "配色(&C)",IDC_STATIC,9,64,240,93
+    LTEXT           "集団項目(&T):",IDC_STATIC,16,79,44,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_STRUCTCOLOR,68,79,55,106,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "繰返し項目(&O):",IDC_STATIC,131,79,47,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_OCCURSCOLOR,183,79,55,106,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "再定義項目(&E):",IDC_STATIC,16,99,49,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_REDEFINESCOLOR,68,99,55,106,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "圧縮項目(&B):",IDC_STATIC,131,99,47,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_BINCOLOR,183,99,55,106,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "補完項目(&U):",IDC_STATIC,16,120,47,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_SUPPCOLOR,68,120,55,106,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "背景色として使用する(&G)",IDC_CHK_COLBK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,139,104,11
+    CONTROL         "前回終了時のウィンドウ位置、サイズを記録する(&R)",IDC_CHK_RESTORWND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,176,169,11
+    CONTROL         "リストアイテムにイメージ描画(&I)",IDC_CHK_ITEMIMAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,162,109,11
+    PUSHBUTTON      "標準の配色 (&D)",IDC_BTN_DEFCOL,181,136,62,14
+    LTEXT           "データ項目(&D):",IDC_STATIC,131,120,47,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_DATCOLOR,183,120,55,106,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SEARCHBOX DIALOGEX 0, 0, 255, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "検索"
+FONT 9, "Meiryo UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "検索文字列(&N):",IDC_STATIC,7,7,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_CMB_SEARCH,62,7,123,119,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "検索 (&F)",IDOK,195,7,53,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,195,25,53,14
+    CONTROL         "大文字と小文字を区別する(&C)",IDC_CHECK_RECASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,29,113,12
+    GROUPBOX        "検索項目(&S)",IDC_STATIC,7,61,241,43
+    CONTROL         "項目名(&D)",IDC_CHECK_DESCRIPT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,73,65,12
+    CONTROL         "変数型定義(&T)",IDC_CHECK_TYPEDEF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,73,65,12
+    CONTROL         "圧縮定義(&P)",IDC_CHECK_COMPRESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,73,65,12
+    CONTROL         "初期値(&V)",IDC_CHECK_VALUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,86,65,12
+    CONTROL         "コメント(&O)",IDC_CHECK_COMMENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,86,65,12
+    CONTROL         "繰返し項目は先頭のみ(&F)",IDC_CHECK_OCCURS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,43,101,12
+END
+
+IDD_DATAPANEL DIALOGEX 0, 0, 342, 57
+STYLE DS_SETFONT | WS_CHILD
+FONT 11, "Yu Gothic UI", 400, 0, 0x80
+BEGIN
+    CONTROL         "|<",IDC_BTN_FIRSTDAT,"Button",BS_OWNERDRAW,48,41,20,11
+    CONTROL         ">|",IDC_BTN_LASTDAT,"Button",BS_OWNERDRAW,121,42,20,11
+    CONTROL         ">",IDC_BTN_NEXTDAT,"Button",BS_OWNERDRAW,98,41,20,11
+    CONTROL         "<",IDC_BTN_PREVDAT,"Button",BS_OWNERDRAW,73,41,20,11
+    EDITTEXT        IDC_EDIT_CURDAT,134,14,35,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER | NOT WS_TABSTOP
+END
+
+IDD_JUDGEBOX DIALOGEX 0, 0, 263, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ファイルの種類を選択"
+FONT 10, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    PUSHBUTTON      "キャンセル",IDCANCEL,206,160,50,14
+    CONTROL         "CobolSource",IDC_BTN_SRC,"Button",BS_OWNERDRAW | WS_TABSTOP,7,89,249,31
+    CONTROL         "DataFile",IDC_BTN_DAT,"Button",BS_OWNERDRAW | WS_TABSTOP,7,123,249,31
+    GROUPBOX        "",IDC_STATIC,7,35,249,49
+    LTEXT           "ファイル名",IDC_STATIC,54,41,32,11,SS_CENTERIMAGE
+    LTEXT           "サイズ",IDC_STATIC,54,51,32,11,SS_CENTERIMAGE
+    LTEXT           "拡張子",IDC_STATIC,54,60,32,11,SS_CENTERIMAGE
+    LTEXT           "更新日時",IDC_STATIC,54,70,32,11,SS_CENTERIMAGE
+    LTEXT           "：",IDC_STATIC,87,41,10,11,SS_CENTERIMAGE
+    LTEXT           "：",IDC_STATIC,87,51,10,11,SS_CENTERIMAGE
+    LTEXT           "：",IDC_STATIC,87,60,10,11,SS_CENTERIMAGE
+    LTEXT           "：",IDC_STATIC,87,70,10,11,SS_CENTERIMAGE
+    LTEXT           "ファイル名",IDC_ST_FILE,99,41,147,11,SS_CENTERIMAGE
+    LTEXT           "サイズ",IDC_ST_SIZE,99,51,147,11,SS_CENTERIMAGE
+    LTEXT           "拡張子",IDC_ST_EXT,99,60,147,11,SS_CENTERIMAGE
+    LTEXT           "更新日時",IDC_ST_UPDATE,99,70,147,11,SS_CENTERIMAGE
+    CONTROL         "今後この拡張子をデータファイルとして扱う(&A)",IDC_CHK_DATEXT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,14,162,139,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCEL_MAIN ACCELERATORS
+BEGIN
+    "A",            IDM_ANACBL,             VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      IDM_CANCELJOB,          VIRTKEY, NOINVERT
+    "C",            IDM_COPY,               VIRTKEY, CONTROL, NOINVERT
+    "E",            IDM_EDITDLG,            VIRTKEY, CONTROL, NOINVERT
+    "F",            IDM_FIND,               VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_NEW,                VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_NEW_APP,            VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_RIGHT,       IDM_NEXTDAT,            VIRTKEY, ALT, NOINVERT
+    "O",            IDM_OPENSRC,            VIRTKEY, CONTROL, NOINVERT
+    "V",            IDM_PASTE,              VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      IDM_PASTE2,             VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        IDM_PREVDAT,            VIRTKEY, ALT, NOINVERT
+    VK_F5,          IDM_REFLESHSRC,         VIRTKEY, NOINVERT
+    "3",            IDM_SEARCH_VIEW,        VIRTKEY, CONTROL, NOINVERT
+    VK_F12,         IDM_SETUP,              VIRTKEY, NOINVERT
+    "2",            IDM_SOURCE_VIEW,        VIRTKEY, CONTROL, NOINVERT
+    "1",            IDM_TRACE_VIEW,         VIRTKEY, CONTROL, NOINVERT
+    "4",            IDM_DATA_VIEW,          VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON01              ICON                    "001.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,4,0,0
+ PRODUCTVERSION 0,4,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "COBOLｿｰｽ解析ｱﾌﾟﾘｹｰｼｮﾝ"
+            VALUE "CompanyName", "Copyright (C) Pol."
+            VALUE "FileDescription", "Yama64 Free"
+            VALUE "FileVersion", "0.4.0.0"
+            VALUE "InternalName", "Yama64 Free"
+            VALUE "LegalCopyright", "Copyright (C) 2025- Pol."
+            VALUE "OriginalFilename", "Yama64.exe"
+            VALUE "ProductName", "Pol."
+            VALUE "ProductVersion", "0.4.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CONFBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_EDITBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_ITEM_PROPPAGE_1, DIALOG
+    BEGIN
+    END
+
+    IDD_PAGE_ANALYSYS, DIALOG
+    BEGIN
+    END
+
+    IDD_PAGE_ANALYSYS_CORE, DIALOG
+    BEGIN
+    END
+
+    IDD_PAGE_EXPORT, DIALOG
+    BEGIN
+    END
+
+    IDD_PAGE_FOLDER, DIALOG
+    BEGIN
+    END
+
+    IDD_PAGE_OTHER, DIALOG
+    BEGIN
+    END
+
+    IDD_PAGE_UI, DIALOG
+    BEGIN
+    END
+
+    IDD_SEARCHBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_DATAPANEL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 330
+    END
+
+    IDD_JUDGEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ITEM_PROPPAGE_1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PAGE_UI AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CONFBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SEARCHBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PAGE_ANALYSYS_CORE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EDITBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DATAPANEL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PAGE_ANALYSYS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PAGE_OTHER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_JUDGEBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_PNG_TOOLBAR         PNG                     "TB01.png"
+
+IDR_PNG_TOOLBAR_D       PNG                     "TB02.png"
+
+IDR_PNG_TREE            PNG                     "TREE01.png"
+
+IDR_PNG_EDIT            PNG                     "EDIT01.png"
+
+IDB_PNG_DATICO          PNG                     "DATICO.png"
+
+IDB_PNG_DATBTN          PNG                     "DATBTN.png"
+
+IDB_PNG_JUDGE           PNG                     "JUDE.png"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_VERSIONINFO         "Yama64 Free V0.4.0 copyright Pol.\n※Yama64 は現在開発中です\n本ソフトウェアはフリーウェアです。\n個人・法人を問わず無償で使用できます。\n本ソフトウェアの再配布は、内容を改変しない場合に限り許可します。\nソースコードの改変・再配布については作者の許可なく行わないでください。\n本ソフトウェアの使用によって発生した損害について、作者は一切の責任を負いません。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
