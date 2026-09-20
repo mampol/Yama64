@@ -38,7 +38,7 @@ Yama64 Free is free for personal and commercial use.
 The source code is publicly available, but this project is **not released under an open-source license**.
 Redistribution or publication of modified versions requires permission from the author.
 
-See `LICENSE.txt` and `LICENSE_EN.txt` for details.
+See `LICENSE_JP.txt` and `LICENSE_EN.txt` for details.
 
 ## Status
 
