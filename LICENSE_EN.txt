@@ -1,0 +1,58 @@
+Yama64 Free License
+
+Copyright (C) 2026 Pol
+All rights reserved.
+
+1. Permission to Use
+Yama64 Free (the "Software") may be used free of charge by both individuals and organizations.
+
+The Software may be used for personal use, learning, evaluation, testing, and business purposes.
+
+2. Source Code
+The source code published in this repository may be viewed and used for the purposes of review,
+learning, evaluation, troubleshooting, and proposing improvements to this project.
+
+You may modify the source code for the purpose of improving the Software and submit such changes
+to the author through GitHub Pull Requests or similar contribution methods.
+
+However, without the author's prior permission, you may not redistribute, publish, or sell modified
+source code or modified versions of the Software to third parties.
+
+3. Redistribution
+Official Yama64 Free distribution packages published by the author may be redistributed free of charge
+only if they are left unmodified.
+
+When redistributing the Software, you must not remove or alter this license or any copyright notice.
+
+4. Prohibited Actions
+Without the author's prior permission, you may not:
+
+- Redistribute or publish modified source code or binaries.
+- Sell the Software or any derivative work based on the Software.
+- Alter the Software's name, logo, copyright notices, or other identifying information in a way that
+  presents the Software as your own work.
+
+5. Contributions (Pull Requests, etc.)
+By submitting source code, fixes, suggestions, or other contributions to this project, you agree that
+the author may use, modify, integrate, and distribute the submitted contribution, free of charge,
+as part of Yama64 or related products.
+
+6. No Warranty and Limitation of Liability
+The Software is provided "as is".
+
+The author makes no express or implied warranties regarding the operation, analysis results, accuracy,
+fitness for a particular purpose, continued availability, or any other aspect of the Software.
+
+The author shall not be liable for any damages arising from the use of, or inability to use, the Software,
+including but not limited to data loss, business interruption, lost profits, or other direct or indirect damages.
+
+When handling important data, always create appropriate backups and verify analysis results and displayed
+values against the actual COBOL compiler specifications, system specifications, and business requirements.
+
+7. Other Terms
+This license is not an open-source license such as the MIT License, Apache License, or GPL.
+
+Although the source code is publicly available, redistribution and publication of derivative works are
+subject to the restrictions described above.
+
+The terms of this license may be changed in future versions of the Software.
